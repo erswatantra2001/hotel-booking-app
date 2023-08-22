@@ -1,0 +1,111 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 194, 187);
+    padding: 15px 40px;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 8px 12px;
+    width: 40%;
+  }
+  
+  .searchbar input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .searchbar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links ul li{
+    color: white;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }  
+
+  .auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: rgb(27, 27, 27);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: black;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .searchbar {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .auth-buttons {
+      margin-top: 10px;
+    }
+  }
+  
